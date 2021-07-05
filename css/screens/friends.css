@@ -1,0 +1,42 @@
+#friends-display-link {
+    color: #2e363e;
+    text-align: center;
+    display: block;
+    background-color: #fafafa;
+    padding: 15px 0px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: -15px;
+}
+
+#friends-display-link i {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.friends-screen__birth,
+.friends-screen__channel,
+.friends-screen__person {
+    margin-top: 25px;
+}
+
+.birthday-component,
+.channel-component {
+    padding: 10px 0;
+    justify-content: space-between;
+}
+
+.birthday-component,
+.channel-component {
+    display: flex;
+    align-items: center;
+}
+
+.birthday-component:hover,
+.channel-component:hover {
+    background-color: #f8f8f8;
+}
+
+.fa-chevron-down,
+.fa-chevron-up {
+    cursor: pointer;
+}

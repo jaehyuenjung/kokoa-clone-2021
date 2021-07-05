@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/css/styles.css" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Find - Kokoa Clone</title>
+    </head>
+    <body>
+        <div class="status-bar no-drag">
+            <div class="status-bar__column">
+                <span>No Service</span>
+                <i class="fas fa-wifi"></i>
+            </div>
+            <div class="status-bar__column">
+                <span>18:43</span>
+            </div>
+            <div class="status-bar__column">
+                <span>110%</span>
+                <i class="fas fa-battery-full fa-lg"></i>
+                <i class="fas fa-bolt"></i>
+            </div>
+        </div>
+
+        <header class="screen-header no-drag">
+            <h1 class="screen-header__title">Find</h1>
+            <div class="screen-header__icons">
+                <span><i class="fa fa-search fa-lg"></i></span>
+                <span class="screen-header__span-relative">
+                    <span class="badge screen-header__indication"></span>
+                    <i class="fas fa-cog fa-lg"></i>
+                </span>
+            </div>
+        </header>
+
+        <main class="find-screen no-drag">
+            <div class="icon-raw default-layout-margin">
+                <div class="icon-raw__column">
+                    <div class="icon-raw__icon">
+                        <i class="fas fa-qrcode"></i>
+                        <span>QR Code</span>
+                    </div>
+                    <div class="icon-raw__icon">
+                        <i class="far fa-address-book" style="transform: rotateY(180deg)"></i>
+                        <span>Add by Contacts</span>
+                    </div>
+                    <div class="icon-raw__icon">
+                        <i class="fas fa-fingerprint"></i>
+                        <span>Add by ID</span>
+                    </div>
+                    <div class="icon-raw__icon">
+                        <i class="far fa-envelope"></i>
+                        <span>Invite</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommended-friends">
+                <div class="sub-header default-layout-margin">
+                    <span>Recommended Friends</span>
+                </div>
+                <div class="no-recommended-friends default-layout-margin">You have no recommended friends.</div>
+                <div class="recommended-friends-list">
+                    <!--<div class="recommended-friends-component">
+                        <div class="user-component__column default-layout-margin">
+                            <img src="img/channel.png" class="user-component__avatar user-component__avatar--sm" />
+                            <div class="user-component__text">
+                                <h4 class="user-component__title user-component__title--not-bold">Channel</h3>
+                            </div>
+                        </div>
+                        <div class="user-component__column default-layout-margin">
+                            <div class="add-friends-btn">
+                                <i class="fas fa-user-plus fa-2x"></i>
+                            </div>
+                        </div>
+                    </div> !-->
+                </div>
+            </div>
+
+            <div class="open-chat">
+                <div class="sub-header default-layout-margin">
+                    <span>Open Chat</span>
+                    <span>Go to OpenChat Home <i class="fas fa-chevron-right fa-xs"></i></span>
+                </div>
+                <div class="open-post-list">
+                    <div class="open-post">
+                        <div class="open-post__component default-layout-margin">
+                            <div class="open-post__column">
+                                <h5 class="open-post__title">#BTS</h5>
+                                <h6 class="open-post__hashtags">#bts#army#friends</h6>
+                                <div class="open-post__members">
+                                    <img class="open-post__img" src="img/Ana_Spelunky.png" />
+                                    <span class="open-post__member-count">802 members</span>
+                                    <div class="divider"></div>
+                                    <span class="open-post__member-status">Active</span>
+                                </div>
+                            </div>
+                            <div class="open-post__column">
+                                <div class="open-post__photo">
+                                    <img src="img/Ana_Spelunky.png">
+                                    <div class="open-post__heart-count">
+                                        <i class="fas fa-heart"></i> <span>326</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </main>
+
+        <nav class="nav-bar no-drag">
+            <ul class="nav-bar__list">
+                <li class="nav-bar__btn">
+                    <a href="/friends.html" class="nav-bar__link"><i class="fas fa-user fa-2x"></i></a>
+                </li>
+                <li class="nav-bar__btn">
+                    <span class="nav-bar__notification badge">10</span>
+                    <a href="/chats.html" class="nav-bar__link"><i class="fas fa-comment fa-2x"></i></a>
+                </li>
+                <li class="nav-bar__btn">
+                    <a href="/find.html" class="nav-bar__link"><i class="fa fa-search fa-2x"></i></a>
+                </li>
+                <li class="nav-bar__btn">
+                    <span class="nav-bar__indication badge">N</span>
+                    <a href="/more.html" class="nav-bar__link"><i class="fas fa-ellipsis-h fa-2x"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+        <script src="https://kit.fontawesome.com/3b3f0f16fa.js" crossorigin="anonymous"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>

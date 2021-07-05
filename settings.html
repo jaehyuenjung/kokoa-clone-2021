@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/css/styles.css" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Settings - Kokoa Clone</title>
+    </head>
+    <body>
+        <div class="status-bar no-drag">
+            <div class="status-bar__column">
+                <span>No Service</span>
+                <i class="fas fa-wifi"></i>
+            </div>
+            <div class="status-bar__column">
+                <span>18:43</span>
+            </div>
+            <div class="status-bar__column">
+                <span>110%</span>
+                <i class="fas fa-battery-full fa-lg"></i>
+                <i class="fas fa-bolt"></i>
+            </div>
+        </div>
+
+        <header class="alt-header">
+            <div class="alt-header__column">
+                <i class="fas fa-angle-left fa-2x"></i>
+            </div>
+            <div class="alt-header__column">
+                <h1 class="alt-header__title">Settings</h1>
+            </div>
+            <div class="alt-header__column">
+                <i class="fas fa-search fa-lg"></i>
+            </div>
+        </header>
+
+        <main class="settings-screen no-drag">
+            <ul class="settings-list">
+                <li class="settings__setting">
+                    <div class="settings__setting-column default-layout-margin">
+                        <div class="setting-column__first">
+                            <i class="fas fa-bullhorn"></i>
+                            <span>Notices</span>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="settings__setting">
+                    <div class="settings__setting-column default-layout-margin">
+                        <div class="setting-column__first">
+                            <i class="fas fa-flask"></i>
+                            <span>Kokoa Lab</span>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="settings__setting">
+                    <div class="settings__setting-column default-layout-margin">
+                        <div class="setting-column__first">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Version</span>
+                        </div>
+                        <div class="setting-column__last">Lastest Version</div>
+                    </div>
+                </li>
+            </ul>
+        </main>
+
+        <nav class="nav-bar no-drag">
+            <ul class="nav-bar__list">
+                <li class="nav-bar__btn">
+                    <a href="/friends.html" class="nav-bar__link"><i class="fas fa-user fa-2x"></i></a>
+                </li>
+                <li class="nav-bar__btn">
+                    <span class="nav-bar__notification badge">10</span>
+                    <a href="/chats.html" class="nav-bar__link"><i class="fas fa-comment fa-2x"></i></a>
+                </li>
+                <li class="nav-bar__btn">
+                    <a href="/find.html" class="nav-bar__link"><i class="fa fa-search fa-2x"></i></a>
+                </li>
+                <li class="nav-bar__btn">
+                    <span class="nav-bar__indication badge">N</span>
+                    <a href="/more.html" class="nav-bar__link"><i class="fas fa-ellipsis-h fa-2x"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+        <script src="https://kit.fontawesome.com/3b3f0f16fa.js" crossorigin="anonymous"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>

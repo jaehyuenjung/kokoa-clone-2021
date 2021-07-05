@@ -1,0 +1,7 @@
+.sub-header {
+    padding-top: 15px;
+    display: flex;
+    border-top: var(--main-border);
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.5);
+}

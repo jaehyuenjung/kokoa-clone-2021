@@ -1,0 +1,36 @@
+.screen-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px var(--horizontal-space) 20px;
+    margin-bottom: 15px;
+}
+
+.screen-header__title {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.screen-header__icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.screen-header__icons span i {
+    margin-left: var(--horizontal-space);
+}
+
+.screen-header__span-relative {
+    position: relative;
+}
+
+.screen-header__span-relative a {
+    color: inherit;
+}
+
+.screen-header__indication {
+    padding: 3px;
+    position: absolute;
+    right: -5px;
+    top: -10px;
+}

@@ -1,0 +1,34 @@
+.icon-raw {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-raw__column {
+    display: flex;
+}
+
+.icon-raw__icon {
+    padding: 15px 0px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-raw__icon:hover {
+    background-color: #f8f8f8;
+}
+
+.icon-raw__icon i {
+    font-size: 35px;
+    margin-bottom: 18px;
+}
+
+.icon-raw__icon span {
+    width: 120px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/css/styles.css" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Friends - Kokoa Clone</title>
+    </head>
+    <body>
+        <div class="status-bar no-drag">
+            <div class="status-bar__column">
+                <span>No Service</span>
+                <i class="fas fa-wifi"></i>
+            </div>
+            <div class="status-bar__column">
+                <span>18:43</span>
+            </div>
+            <div class="status-bar__column">
+                <span>110%</span>
+                <i class="fas fa-battery-full fa-lg"></i>
+                <i class="fas fa-bolt"></i>
+            </div>
+        </div>
+
+        <header class="screen-header no-drag">
+            <h1 class="screen-header__title">Friends</h1>
+            <div class="screen-header__icons">
+                <span><i class="fa fa-search fa-lg"></i></span>
+                <span><i class="fas fa-music fa-lg"></i></span>
+                <span><i class="fas fa-cog fa-lg"></i></span>
+            </div>
+        </header>
+
+        <a id="friends-display-link" class="no-drag"> <i class="fas fa-info-circle"></i> Friends' Names Display <i class="fas fa-chevron-right fa-xs"></i></a>
+
+        <main class="friends-screen no-drag">           
+            <div class="user-component">
+                <div class="user-component__column default-layout-margin">
+                    <img src="img/Ana_Spelunky.png" class="user-component__avatar user-component__avatar--xl" />
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">Ana Spelunky</h3>
+                        <!-- <h6 class="user-component__subtitle">this text whatever</h4> -->
+                    </div>
+                </div>
+                <div class="user-component__column"></div>
+            </div>
+
+            <div class="friends-screen__birth">
+                <div class="sub-header default-layout-margin">
+                    <span>Birthday Friends</span>
+                    <i class="fas fa-chevron-up fa-xs"></i>
+                </div>
+                <div class="birthday-friends-list">
+                    <div class="user-component-list">
+                        <div class="user-component">
+                            <div class="user-component__column default-layout-margin">
+                                <img src="img/Ana_Spelunky.png" class="user-component__avatar user-component__avatar--sm" />
+                                <div class="user-component__text">
+                                    <h4 class="user-component__title user-component__title--not-bold">Ana Spelunky <i class="fas fa-birthday-cake"></i></h3>
+                                    <h6 class="user-component__subtitle">Plese check my kokoa account info</h4>
+                                </div>
+                            </div>
+                            <div class="user-component__column default-layout-margin">
+                                <div class="user-component__btn-gift">Gift <i class="fas fa-hand-holding-heart fa-la"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="birthday-component">
+                        <div class="user-component__column default-layout-margin">
+                            <img src="img/birthday.PNG" class="user-component__avatar user-component__avatar--sm" />
+                            <div class="user-component__text">
+                                <h4 class="user-component__title user-component__title--not-bold">Check your friend's birthday!</h3>
+                            </div>
+                        </div>
+                        <div class="user-component__column default-layout-margin">
+                            <div>
+                                <span>4</span>
+                                <i class="fas fa-chevron-right fa-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="friends-screen__channel">
+                <div class="sub-header default-layout-margin">
+                    <span>Channel</span>
+                    <i class="fas fa-chevron-up fa-xs"></i>
+                </div>
+                <div class="channel-component">
+                    <div class="user-component__column default-layout-margin">
+                        <img src="img/channel.png" class="user-component__avatar user-component__avatar--sm" />
+                        <div class="user-component__text">
+                            <h4 class="user-component__title user-component__title--not-bold">Channel</h3>
+                        </div>
+                    </div>
+                    <div class="user-component__column default-layout-margin">
+                        <div>
+                            <span>2</span>
+                            <i class="fas fa-chevron-right fa-xs"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="friends-screen__person">
+                <div class="sub-header default-layout-margin">
+                    <span>Friends <span class="friends-scrren__person-number">1</span></span>
+                    <i class="fas fa-chevron-up fa-xs"></i>
+                </div>
+                <div class="user-component-list">
+                    <div class="user-component">
+                        <div class="user-component__column default-layout-margin">
+                            <img src="img/Ana_Spelunky.png" class="user-component__avatar user-component__avatar--sm" />
+                            <div class="user-component__text">
+                                <h4 class="user-component__title user-component__title--not-bold">Ana Spelunky</h3>
+                            </div>
+                        </div>
+                        <div class="user-component__column default-layout-margin"></div>
+                    </div>
+                    <div class="user-component">
+                        <div class="user-component__column default-layout-margin">
+                            <img src="img/Margaret_Tunnel.png" class="user-component__avatar user-component__avatar--sm" />
+                            <div class="user-component__text">
+                                <h4 class="user-component__title user-component__title--not-bold">Margaret_Tunnel</h3>
+                            </div>
+                        </div>
+                        <div class="user-component__column default-layout-margin"></div>
+                    </div>
+                    <div class="user-component">
+                        <div class="user-component__column default-layout-margin">
+                            <img src="img/Colin_Northward.png" class="user-component__avatar user-component__avatar--sm" />
+                            <div class="user-component__text">
+                                <h4 class="user-component__title user-component__title--not-bold">Colin Northward</h3>
+                            </div>
+                        </div>
+                        <div class="user-component__column default-layout-margin"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <nav class="nav-bar no-drag">
+            <ul class="nav-bar__list">
+                <li class="nav-bar__btn">
+                    <a href="/friends.html" class="nav-bar__link"><i class="fas fa-user fa-2x"></i></a>
+                </li>
+                <li class="nav-bar__btn">
+                    <span class="nav-bar__notification badge">36</span>
+                    <a href="/chats.html" class="nav-bar__link"><i class="fas fa-comment fa-2x"></i></a>
+                </li>
+                <li class="nav-bar__btn">
+                    <a href="/find.html" class="nav-bar__link"><i class="fa fa-search fa-2x"></i></a>
+                </li>
+                <li class="nav-bar__btn">
+                    <span class="nav-bar__indication badge">N</span>
+                    <a href="/more.html" class="nav-bar__link"><i class="fas fa-ellipsis-h fa-2x"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+        <script src="https://kit.fontawesome.com/3b3f0f16fa.js" crossorigin="anonymous"></script>
+        <script src="js/app.js"></script>
+        <script src="js/friends.js"></script>
+    </body>
+</html>

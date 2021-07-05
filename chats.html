@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/css/styles.css" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chats - Kokoa Clone</title>
+    </head>
+    <body>
+        <div class="status-bar no-drag">
+            <div class="status-bar__column">
+                <span>No Service</span>
+                <i class="fas fa-wifi"></i>
+            </div>
+            <div class="status-bar__column">
+                <span>18:43</span>
+            </div>
+            <div class="status-bar__column">
+                <span>110%</span>
+                <i class="fas fa-battery-full fa-lg"></i>
+                <i class="fas fa-bolt"></i>
+            </div>
+        </div>
+
+        <header class="screen-header no-drag">
+            <h1 class="screen-header__title">Chats</h1>
+            <div class="screen-header__icons">
+                <span><i class="fa fa-search fa-lg"></i></span>
+                <span><i class="far fa-comment-dots fa-lg"></i></span>
+                <span><i class="fas fa-music fa-lg"></i></span>
+                <span><i class="fas fa-cog fa-lg"></i></span>
+            </div>
+        </header>
+
+        <main class="chats-screen no-drag">
+            <div class="user-component">
+                <div class="user-component__column default-layout-margin">
+                    <img src="img/Ana_Spelunky.png" class="user-component__avatar" />
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">Ana Spelunky</h3>
+                        <h6 class="user-component__subtitle">Plese check my kokoa account info</h4>
+                    </div>
+                </div>
+                <div class="user-component__column default-layout-margin">
+                    <span class="user-component__time">21:32</span>
+                    <div class="user-component__alert badge">10</div>
+                </div>
+            </div>
+        </main>
+
+        <nav class="nav-bar no-drag">
+            <ul class="nav-bar__list">
+                <li class="nav-bar__btn">
+                    <a href="/friends.html" class="nav-bar__link"><i class="fas fa-user fa-2x"></i></a>
+                </li>
+                <li class="nav-bar__btn">
+                    <span class="nav-bar__notification badge">10</span>
+                    <a href="/chats.html" class="nav-bar__link"><i class="fas fa-comment fa-2x"></i></a>
+                </li>
+                <li class="nav-bar__btn">
+                    <a href="/find.html" class="nav-bar__link"><i class="fa fa-search fa-2x"></i></a>
+                </li>
+                <li class="nav-bar__btn">
+                    <span class="nav-bar__indication badge">N</span>
+                    <a href="/more.html" class="nav-bar__link"><i class="fas fa-ellipsis-h fa-2x"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+        <script src="https://kit.fontawesome.com/3b3f0f16fa.js" crossorigin="anonymous"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>

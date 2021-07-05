@@ -1,0 +1,27 @@
+.settings-list {
+    padding: 8px 0;
+    border-bottom: var(--main-border);
+}
+
+.settings__setting:hover {
+    background-color: #f8f8f8;
+}
+
+.settings__setting-column {
+    padding: 20px 0;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.settings__setting:nth-child(even) .settings__setting-column {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.settings__setting i {
+    opacity: 0.8;
+    margin-right: 20px;
+    font-size: 22px;
+}
