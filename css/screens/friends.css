@@ -40,3 +40,15 @@
 .fa-chevron-up {
     cursor: pointer;
 }
+
+#splash-screen {
+    background-color: var(--yellow);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 132px;
+}
