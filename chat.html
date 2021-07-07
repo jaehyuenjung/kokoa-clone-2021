@@ -46,7 +46,9 @@
                         <span class="message__author">Nicolas</span>
                         <div class="message__info">
                             <span class="message__bubble">Hi!</span>
-                            <span class="message__time">21:27</span>
+                            <div class="message__notice">
+                                <span class="message__time">21:27</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -54,17 +56,20 @@
                     <div class="message-row__content">
                         <div class="message__info">
                             <span class="message__bubble">What's up?</span>
-                            <span class="message__time">21:27</span>
+                            <div class="message__notice">
+                                <span class="message__unreaders">1</span>
+                                <span class="message__time">21:27</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <form class="reply">
-                <div class="reply__column">
+            <form class="reply-form">
+                <div class="reply-form__column">
                     <i class="far fa-plus-square"></i>
                 </div>
-                <div class="reply__column">
+                <div class="reply-form__column">
                     <input type="text" placeholder="Write a message..." />
                     <i class="far fa-smile"></i>
                     <button>
@@ -76,5 +81,6 @@
 
         <script src="https://kit.fontawesome.com/3b3f0f16fa.js" crossorigin="anonymous"></script>
         <script src="js/app.js"></script>
+        <script src="js/chat.js"></script>
     </body>
 </html>

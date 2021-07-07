@@ -1,6 +1,6 @@
 #chat-body {
     background-color: #abc1d1;
-    padding-bottom: 0;
+    padding-bottom: 60px;
 }
 
 #chat-body .alt-header {
@@ -89,7 +89,20 @@
     flex-direction: row-reverse;
 }
 
-.reply {
+.message__notice {
+    display: flex;
+    flex-direction: column;
+}
+
+.message__unreaders {
+    color: var(--yellow);
+}
+
+.message-row__me .message__unreaders {
+    text-align: end;
+}
+
+.reply-form {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -101,20 +114,20 @@
     box-sizing: border-box;
 }
 
-.reply .reply__column:first-child {
+.reply-form .reply-form__column:first-child {
     width: 10%;
 }
 
-.reply .reply__column:last-child {
+.reply-form .reply-form__column:last-child {
     width: 90%;
     position: relative;
 }
 
-.reply i {
+.reply-form i {
     opacity: 0.5;
 }
 
-.reply input {
+.reply-form input {
     padding: 14px;
     height: 40px;
     width: 100%;
@@ -123,24 +136,24 @@
     box-sizing: border-box;
 }
 
-.reply__column:last-child > i,
-.reply__column:first-child i {
+.reply-form__column:last-child > i,
+.reply-form__column:first-child i {
     font-size: 25px;
 }
 
-.reply__column:last-child > i,
-.reply__column:last-child button {
+.reply-form__column:last-child > i,
+.reply-form__column:last-child button {
     position: absolute;
     right: 5px;
     top: 3px;
 }
 
-.reply__column:last-child > i {
+.reply-form__column:last-child > i {
     right: 60px;
     top: 8px;
 }
 
-.reply__column button {
+.reply-form__column button {
     background-color: var(--yellow);
     border: none;
     width: 35px;
@@ -148,11 +161,11 @@
     border-radius: 50%;
 }
 
-.reply__column button i {
+.reply-form__column button i {
     opacity: 1;
 }
 
-.reply__column button:focus,
-.reply__column button:active {
+.reply-form__column button:focus,
+.reply-form__column button:active {
     outline: none;
 }
