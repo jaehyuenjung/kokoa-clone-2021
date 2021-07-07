@@ -11,11 +11,26 @@
     width: 100%;
 }
 
+@keyframes fadeIn {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
 .chat-screen {
     padding-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.chat-screen > *:not(.reply-form) {
+    animation: fadeIn 0.8s linear;
 }
 
 .chat__timestamp {
@@ -112,10 +127,12 @@
     padding: 5px 25px;
     align-items: center;
     box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
 }
 
 .reply-form .reply-form__column:first-child {
     width: 10%;
+    transition: all 0.3s ease-in-out;
 }
 
 .reply-form .reply-form__column:last-child {
@@ -134,6 +151,7 @@
     border: var(--main-border);
     border-radius: 25px;
     box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
 }
 
 .reply-form__column:last-child > i,
@@ -168,4 +186,25 @@
 .reply-form__column button:focus,
 .reply-form__column button:active {
     outline: none;
+}
+
+.reply-form .reply-form__column:first-child,
+.reply-form .fa-smile,
+.reply-form button {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.reply-form:focus-within .reply-form__column:first-child,
+.reply-form:focus-within .fa-smile,
+.reply-form:focus-within button {
+    opacity: 0;
+}
+
+.reply-form:focus-within {
+    transform: translateY(80px);
+}
+
+.reply-form:focus-within input {
+    width: 98vw;
+    transform: translateY(-80px) translateX(-11%);
 }
