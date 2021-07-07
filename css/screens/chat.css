@@ -205,6 +205,6 @@
 }
 
 .reply-form:focus-within input {
-    width: 98vw;
-    transform: translateY(-80px) translateX(-11%);
+    width: 97vw;
+    transform: translateY(-80px) translateX(-10vw);
 }
