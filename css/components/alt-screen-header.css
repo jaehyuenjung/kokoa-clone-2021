@@ -13,6 +13,7 @@
 .alt-header__title {
     font-size: 28px;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .alt-header__column:first-child {
