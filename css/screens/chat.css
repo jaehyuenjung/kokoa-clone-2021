@@ -37,10 +37,6 @@
 .bg__island {
     width: 25%;
     height: 20%;
-    background-image: url("./img/island.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
     transform: translateY(40%);
     animation: islandMove 2s linear infinite;
     animation-direction: alternate;
