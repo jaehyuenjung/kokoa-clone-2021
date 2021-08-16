@@ -44,7 +44,7 @@ body {
 body {
     padding-top: 21px;
     font-family: "Quicksand", sans-serif;
-    background-image: url("/img/cloud.png");
+    background-image: url("img/cloud.png");
     background-size: 324px 80px;
     background-position: 0 150px;
     background-repeat: repeat-x;
