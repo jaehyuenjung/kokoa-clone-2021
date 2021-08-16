@@ -1,14 +1,95 @@
-#chat-body {
-    background-color: #abc1d1;
-    padding-bottom: 60px;
-}
-
 #chat-body .alt-header {
-    background-color: #abc1d1;
+    background-color: #f4f0e4;
     box-sizing: border-box;
     position: fixed;
     z-index: 1;
     width: 100%;
+}
+
+.chat-body__bg {
+    width: 100%;
+    height: inherit;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    background-color: #f4f0e4;
+}
+
+@keyframes seaMove {
+    to {
+        background-position: -40px 0;
+    }
+}
+
+@keyframes islandMove {
+    50% {
+        transform: translateY(37%);
+    }
+    100% {
+        transform: translateY(39%);
+    }
+}
+
+.bg__island {
+    width: 25%;
+    height: 20%;
+    background-image: url("/img/island.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateY(40%);
+    animation: islandMove 2s linear infinite;
+    animation-direction: alternate;
+}
+
+.bg__sea {
+    width: inherit;
+    height: 20%;
+    background-color: #b4d6e2;
+    position: relative;
+}
+
+.bg__wave {
+    width: inherit;
+    position: relative;
+}
+
+.bg__wave::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 10px;
+    background-repeat: repeat-x;
+    background-size: 20px 40px;
+    background-image: radial-gradient(
+        circle at 10px -15px,
+        transparent 20px,
+        #b4d6e2 21px
+    );
+    animation: seaMove 5s linear infinite;
+}
+
+.bg__wave::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 15px;
+    background-repeat: repeat-x;
+    background-size: 40px 40px;
+    background-image: radial-gradient(
+        circle at 10px 26px,
+        #b4d6e2 20px,
+        transparent 21px
+    );
+    animation: seaMove 5s linear infinite;
 }
 
 @keyframes fadeIn {
@@ -24,13 +105,14 @@
 
 .chat-screen {
     padding-top: 100px;
+    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .chat-screen > *:not(.reply-form) {
-    animation: fadeIn 0.8s linear;
+    animation: fadeIn 0.8s linear forwards;
 }
 
 .chat__timestamp {
@@ -39,6 +121,12 @@
     padding: 15px;
     font-size: 14px;
     border-radius: 25px;
+}
+
+.message-row__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .message-row {
@@ -61,16 +149,26 @@
     justify-content: flex-end;
 }
 
-.message-row img {
+.message-row__profile {
     width: 45px;
     height: 45px;
+    background-image: url("/img/Raymond.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 50%;
     margin-right: 10px;
 }
 
 .message__author {
     margin-bottom: 5px;
-    display: block;
+    display: flex;
+    padding: 5px 10px;
+    color: #488b92;
+    background-color: #acc9cf;
+    border-radius: 20px;
+    margin-right: auto;
+    font-weight: 600;
 }
 
 .message__info {
@@ -79,7 +177,9 @@
 }
 
 .message__bubble {
-    background-color: white;
+    background-color: #ffc686;
+    border: 3px solid white;
+    color: white;
     padding: 13px;
     font-size: 18px;
     border-radius: 15px;
@@ -96,7 +196,7 @@
 }
 
 .message-row__me .message__bubble {
-    background-color: var(--yellow);
+    background-color: var(--green);
     margin-left: 5px;
 }
 
@@ -121,7 +221,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: white;
+    background-color: #ddddff;
     display: flex;
     justify-content: space-between;
     padding: 5px 25px;
@@ -149,6 +249,8 @@
     height: 40px;
     width: 100%;
     border: var(--main-border);
+    border-color: transparent;
+    background-color: #ffdeff;
     border-radius: 25px;
     box-sizing: border-box;
     transition: all 0.3s ease-in-out;
@@ -172,8 +274,9 @@
 }
 
 .reply-form__column button {
-    background-color: var(--yellow);
-    border: none;
+    background-color: var(--green);
+    border: 3px solid white;
+    color: white;
     width: 35px;
     height: 35px;
     border-radius: 50%;

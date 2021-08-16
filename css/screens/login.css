@@ -1,15 +1,153 @@
 .welcome-header {
-    margin: 90px 0px;
+    margin: 40px 0px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-weight: 600;
 }
 
 .welcome-header__title {
+    width: 300px;
+    height: 150px;
+    background-image: url("https://preview.redd.it/r9mmqqvsa5d51.png?width=902&format=png&auto=webp&s=52c407242ff6e8d245d1772234045b65050532cf");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     margin-bottom: 40px;
+    position: relative;
+}
+
+.welcome-header__main-title {
+    width: 180px;
+    height: 30px;
+    color: #ffd050;
     font-size: 25px;
+    font-weight: 700;
+    position: absolute;
+}
+
+.welcome-header__main-title span {
+    visibility: hidden;
+}
+
+.main-title__toom,
+.main-title__took,
+.main-title__talk {
+    visibility: visible;
+}
+
+.main-title__toom span,
+.main-title__nook span,
+.main-title__talk span {
+    position: absolute;
+}
+
+.main-title__toom span:nth-child(1) {
+    left: 5px;
+    top: -10px;
+    visibility: visible;
+    transform: rotate(-5deg);
+    font-size: 35px;
+}
+
+.main-title__toom span:nth-child(1)::after {
+    content: "Welcom to";
+    width: 60px;
+    top: 2px;
+    position: absolute;
+    color: white;
+    font-size: 5px;
+}
+
+.main-title__toom span:nth-child(2) {
+    top: -10px;
+    left: 30px;
+    visibility: visible;
+    transform: rotate(-2deg);
+    font-size: 30px;
+}
+
+.main-title__toom span:nth-child(3) {
+    top: -5px;
+    left: 55px;
+    visibility: visible;
+    transform: rotate(4deg);
+    font-size: 30px;
+}
+
+.main-title__toom span:nth-child(4) {
+    top: -5px;
+    left: 80px;
+    visibility: visible;
+    transform: rotate(6deg);
+    font-size: 30px;
+}
+
+.main-title__nook span:nth-child(1) {
+    left: 0;
+    top: 30px;
+    visibility: visible;
+    transform: rotate(6deg);
+    font-size: 35px;
+}
+
+.main-title__nook span:nth-child(2) {
+    left: 28px;
+    top: 35px;
+    transform: rotate(0deg);
+    visibility: visible;
+    font-size: 30px;
+}
+
+.main-title__nook span:nth-child(3) {
+    left: 50px;
+    top: 40px;
+    transform: rotate(2deg);
+    visibility: visible;
+    font-size: 30px;
+}
+
+.main-title__nook span:nth-child(4) {
+    left: 72px;
+    top: 40px;
+    transform: rotate(6deg);
+    visibility: visible;
+    font-size: 30px;
+}
+
+.main-title__talk span:nth-child(1) {
+    left: 104px;
+    top: 34px;
+    transform: rotate(0deg);
+    visibility: visible;
+    font-size: 35px;
+}
+
+.main-title__talk span:nth-child(2) {
+    left: 124px;
+    top: 39px;
+    transform: rotate(4deg);
+    visibility: visible;
+    font-size: 30px;
+}
+
+.main-title__talk span:nth-child(3) {
+    left: 144px;
+    top: 34px;
+    transform: rotate(-20deg);
+    visibility: visible;
+    font-size: 30px;
+}
+
+.main-title__talk span:nth-child(4) {
+    left: 154px;
+    top: 24px;
+    transform: rotate(-30deg);
+    visibility: visible;
+    font-size: 30px;
 }
 
 .welcome-header__text {
@@ -40,7 +178,7 @@
 }
 
 #login-form input:focus {
-    border-color: var(--yellow);
+    border-color: #8a9cf2;
 }
 
 /**
@@ -54,13 +192,13 @@
 #login-form a {
     text-align: center;
     text-decoration: none;
-    color: inherit;
     margin-top: 10px;
 }
 
 .login-form__submit {
-    border: none;
-    background-color: var(--yellow);
+    background-color: var(--green);
+    border: 3px solid white;
+    color: white;
     cursor: pointer;
     border-radius: 5px;
     margin-bottom: 10px;

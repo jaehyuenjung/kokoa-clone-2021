@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap");
 @import "reset.css";
 @import "variables.css";
 
@@ -21,10 +21,35 @@
 @import "screens/settings.css";
 @import "screens/chat.css";
 
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100vh;
+}
+
+@keyframes cloudMove {
+    to {
+        background-position: -324px 150px;
+    }
+}
+
+.status-bar,
+.nav-bar,
+body {
+    min-width: 550px;
+}
+
 body {
     padding-top: 21px;
-    padding-bottom: 62px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Quicksand", sans-serif;
+    background-image: url("/img/cloud.png");
+    background-size: 324px 80px;
+    background-position: 0 150px;
+    background-repeat: repeat-x;
+    background-color: #bde2b9;
+    animation: cloudMove 8s linear infinite;
 }
 
 .display--none {
